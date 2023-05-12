@@ -111,7 +111,7 @@ def dependencies(source, searchpaths = [], sofar = Set()):
     if not path.exists(source):
         return active
 
-    curpath = path.dirname(source) + "/"
+    curpath = f"{path.dirname(source)}/"
 
     with open(source, 'r') as file:
         for line in file:
